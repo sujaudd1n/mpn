@@ -1,2 +1,4 @@
-*.swp
+dist
 __pycache__
+
+*.swp
