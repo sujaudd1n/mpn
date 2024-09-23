@@ -3,14 +3,14 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "pman"
+name = "mpn"
 dynamic = ["version"]
 description = 'A man-like command for showing help for Python objects.'
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
 keywords = [
-    "pman"
+    "mpn"
 ]
 authors = [
   { name = "Md Sujauddin Sekh" }
@@ -33,15 +33,15 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/sujaudd1n/pman#readme"
-Issues = "https://github.com/sujaudd1n/pman/issues"
-Source = "https://github.com/sujaudd1n/pman"
+Documentation = "https://github.com/sujaudd1n/mpn#readme"
+Issues = "https://github.com/sujaudd1n/mpn/issues"
+Source = "https://github.com/sujaudd1n/mpn"
 
 [project.scripts]
-pman = "pman.python_help:show_python_help"
+mpn = "mpn.python_help:show_python_help"
 
 [tool.hatch.version]
-path = "src/pman/__about__.py"
+path = "src/mpn/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
@@ -68,19 +68,19 @@ dependencies = [
   "mypy>=1.0.0",
 ]
 [tool.hatch.envs.types.scripts]
-check = "mypy --install-types --non-interactive {args:src/pman tests}"
+check = "mypy --install-types --non-interactive {args:src/mpn tests}"
 
 [tool.coverage.run]
-source_pkgs = ["pman", "tests"]
+source_pkgs = ["mpn", "tests"]
 branch = true
 parallel = true
 omit = [
-  "src/pman/__about__.py",
+  "src/mpn/__about__.py",
 ]
 
 [tool.coverage.paths]
-pman = ["src/pman", "*/pman/src/pman"]
-tests = ["tests", "*/pman/tests"]
+mpn = ["src/mpn", "*/mpn/src/mpn"]
+tests = ["tests", "*/mpn/tests"]
 
 [tool.coverage.report]
 exclude_lines = [

@@ -1,9 +1,9 @@
-# pman
+# mpn
 
 A man-like command for showing help for Python objects.
 
-[![PyPI - Version](https://img.shields.io/pypi/v/pman.svg)](https://pypi.org/project/pman)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pman.svg)](https://pypi.org/project/pman)
+[![PyPI - Version](https://img.shields.io/pypi/v/mpn.svg)](https://pypi.org/project/mpn)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mpn.svg)](https://pypi.org/project/mpn)
 
 -----
 
@@ -16,7 +16,7 @@ A man-like command for showing help for Python objects.
 ## Installation
 
 ```console
-pip install pman
+pip install mpn
 ```
 
 # Usage
@@ -24,11 +24,11 @@ pip install pman
 To see help text for `json.dumps` and `os.path.isdir`, just type
 
 ```console
-pman json.dumps os.path.isdir
+mpn json.dumps os.path.isdir
 ```
 
-You can give any valid Python object as arguments.
+You can give any valid Python objects as arguments.
 
 ## License
 
-`pman` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+`mpn` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
