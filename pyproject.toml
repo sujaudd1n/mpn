@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "pman"
 dynamic = ["version"]
-description = 'A man-like command for Python reference manuals.'
+description = 'A man-like command for showing help for Python objects.'
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
@@ -38,7 +38,7 @@ Issues = "https://github.com/sujaudd1n/pman/issues"
 Source = "https://github.com/sujaudd1n/pman"
 
 [project.scripts]
-pman = "pman.python_help.show_python_help"
+pman = "pman.python_help:show_python_help"
 
 [tool.hatch.version]
 path = "src/pman/__about__.py"
