@@ -5,15 +5,21 @@ build-backend = "hatchling.build"
 [project]
 name = "pman"
 dynamic = ["version"]
-description = 'A man-page-like utility for Python reference manuals.'
+description = 'A man-like command for Python reference manuals.'
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
-keywords = []
+keywords = [
+    "pman"
+]
 authors = [
   { name = "Md Sujauddin Sekh" }
 ]
 classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Topic :: Documentation",
+  "Topic :: Utilities",
   "Development Status :: 4 - Beta",
   "Programming Language :: Python",
   "Programming Language :: Python :: 3.8",
@@ -27,9 +33,12 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/unknown/pman#readme"
-Issues = "https://github.com/unknown/pman/issues"
-Source = "https://github.com/unknown/pman"
+Documentation = "https://github.com/sujaudd1n/pman#readme"
+Issues = "https://github.com/sujaudd1n/pman/issues"
+Source = "https://github.com/sujaudd1n/pman"
+
+[project.scripts]
+pman = "pman.python_help.show_python_help"
 
 [tool.hatch.version]
 path = "src/pman/__about__.py"
