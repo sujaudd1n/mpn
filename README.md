@@ -27,7 +27,7 @@ To see help text for `json.dumps` and `os.path.isdir`, just type
 mpn json.dumps os.path.isdir
 ```
 
-You can give any valid Python objects as arguments.
+You can give any valid Python object as argument.
 
 ## License
 
